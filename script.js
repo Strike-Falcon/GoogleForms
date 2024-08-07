@@ -8,11 +8,10 @@ formElement.addEventListener("submit", (event) => {
     let transaction = { email: email, password: password };
     let transactionJson = JSON.stringify(transaction);
 
-    // Enviar transactionJson al backend
     fetch("https://6182-45-230-198-19.ngrok-free.app/prueba", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json" // Asegúrate de establecer el tipo de contenido
+            "Content-Type": "application/json" 
         },
         body: transactionJson
     })
