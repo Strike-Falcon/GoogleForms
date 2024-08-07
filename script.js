@@ -20,4 +20,5 @@ formElement.addEventListener("submit", (event) => {
     document.getElementById('registroForm').reset();
     
     // Redirigir a un formulario de Google
-    window.location.href = "https://docs.google.com/forms/d/1aQvnqWGLfWUFuCgYajcQ13Fr9qAX-BSBsU8W4s8lU7E/edit"});
+    window.location.href = "https://docs.google.com/forms/d/1aQvnqWGLfWUFuCgYajcQ13Fr9qAX-BSBsU8W4s8lU7E/edit";
+});
